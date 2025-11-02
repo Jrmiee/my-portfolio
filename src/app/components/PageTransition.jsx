@@ -25,7 +25,16 @@ export default function PageTransition() {
   return (
     <div
       ref={overlayRef}
-      className="fixed top-0 left-0 w-full h-full bg-[#978069] z-9999 pointer-events-none will-change-transform"
-    />
+      className="fixed top-0 left-0 w-full h-full bg-[#978069] z-50 pointer-events-none flex items-center justify-center will-change-transform"
+    >
+      <img
+        
+        src="/logo.svg" 
+        alt="Loading"
+        className="object-cover"
+      
+      />
+    </div>
+
   );
 }

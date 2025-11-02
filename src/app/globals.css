@@ -1,20 +1,5 @@
 @import "tailwindcss";
 
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #F4EDE6;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
   color: #2E2E2E;
@@ -31,17 +16,14 @@ h2{
 
 h1{
 
-  font-size: 95px;
-  line-height: 70px;
   text-transform: uppercase;
 
 }
 
 p{
 
-font-size: 19px;
+font-size: 30px;
 font-weight: 700;
-text-transform: uppercase;
 
 
 }
@@ -86,4 +68,100 @@ span{
 ::view-transition-new(root) {
   z-index: 10000;
   animation: none !important;
+}
+
+
+.container {
+  position: relative;
+  width: 100vw;
+ height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.grids {
+  position: relative;
+  width: 100vw;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin: auto;
+}
+
+.grid-row,
+.grid-item {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+
+
+
+
+.grid-item:nth-child(1) {
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.grid-item p {
+  position: relative;
+  z-index: 2;
+  transition: color 0.25s ease;
+}
+
+.grid-item.is-hovered p {
+  color: white;
+}
+
+.highlight {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: white;
+  pointer-events: none;
+  transition: transform 0.25s ease, width 0.25s ease, height 0.25s ease,
+    background-color 0.25s ease, opacity 0.25s ease;
+  opacity: 1;
+}
+
+@media (max-width: 900px) {
+  footer p:nth-child(2) {
+    text-align: right;
+  }
+
+  .container {
+    height: 100vh;
+    padding-bottom: 500px;
+    margin: auto;
+  }
+
+  .grids {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+  }
+
+  .grid-row {
+    display: contents;
+  }
+
+  .grid-item {
+    width: 100%;
+    padding: 60px 0;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .grid-item:nth-child(even) {
+    border-right: none;
+  }
+
+  .grid-item:nth-last-child(-n+2) {
+    border-bottom: none;
+  }
 }

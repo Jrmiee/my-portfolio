@@ -12,11 +12,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="overflow-hidden">
-        <Nav/>
       <ReactLenis root />
+      <PageTransition />
         {children}
 
-        <PageTransition />
       </body>
     </html>
   );

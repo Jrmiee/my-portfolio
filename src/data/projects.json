@@ -1,0 +1,41 @@
+[
+    {
+      "id": 1,
+      "name": "Mahiro",
+      "description": "Création de logo",
+      "image": "project2.jpg",
+      "img-main": "/mahiro-main.jpg",
+      "caseStudy": "Mahiro was looking for a logo, and he came to me after seeing a logo that I made for another artist. I got full creative freedom but he knew exactly what he liked and didn't liked, so it was a very straight forward proccess.",
+      "premierTitre": "La recherche",
+      "premierTexte": ""
+
+    },
+
+    {
+      "id": 2,
+      "name": "NAME MY MEME",
+      "description": "Une application de reconnaissance de meme avec IA",
+      "image": "project1.jpg",
+      "img-main": "/nmm-main.png",
+      "caseStudy": "Name My Meme est une app unique spécialisée sur le monde du meme venant de série et film. La présence d’un Quizz, créateur de meme, en fait l’application idéal pour les passionnés du 7ème art. ",
+      "premierTitre": "Le challenge",
+      "premierTexte": "Nous devions créer un projet de start-up en groupe pendant une bonne partie de l’année. Notre groupe a donc choisi le domaine du cinéma et de la culture, avec comme principale idée une application sur la reconnaissance de l’origine de meme (image de film/série tournée en contenu humoristique). "
+
+
+    },
+
+
+    {
+        "id": 3,
+        "name": "Finnish Beatbox Championship",
+        "description": "Une communication pour le championnat de beatbox finlandais",
+        "image": "projects3.jpg",
+        "img-main": "/finnish-main.jpg",
+        "caseStudy": "J'ai réalisé une affiche pour l'édition 2024 du championnat national finlandais en m'inspirant du faite que la finlande et un pays nordique, donc glaciale par moment. ",
+        "premierTitre": "L'inspiration",
+        "premierTexte": ""
+
+
+      }
+  ]
+  
